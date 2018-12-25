@@ -1,0 +1,170 @@
+* {
+     
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+  
+    font-family: 'Patrick Hand', cursive;
+
+}
+
+h1 {
+    /* font-family: 'Patrick Hand', cursive; */
+    font-family: 'Bitter', serif;
+    color: #f8f8ff
+}
+h2 {
+color: #f5f5f5
+}
+h3 {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 88, 186)
+}
+.white-background{
+    background: #f5f5f581;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+   
+   color: #080508;
+       width: 50%
+   
+}
+.projects {
+  color: #161616;
+
+}
+
+nav {
+    background: -webkit-linear-gradient(top, #0c010b,#3f3d3f);
+    -webkit-box-shadow: 0 8px 100px -8px;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 90px;
+    padding: 0 10px;
+    width: 100%;
+    color: #f8f8ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: inherit;
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: #f5f5f5;
+    justify-content: space-between;
+
+}
+.nav{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.landing-page {
+    background-attachment: fixed; 
+    background-image: url(images/macbookclose.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5f5f5
+}
+
+section {
+    
+height: 100vh;
+    width:100%;
+  padding: 50px 10%;
+  
+}
+
+
+section:nth-of-type(even) {
+  background:-webkit-linear-gradient(top, #0f0b0f, #080508);
+}
+#education img {
+  border-radius: 0;
+}
+
+#education> h3 {
+    font-family: 'Bitter', serif;
+    text-decoration: none;
+    font-weight: 800;
+}
+#education> .container{
+ font-family: 'Bitter', serif;
+color: #19680f;
+font-size: 20px;
+}
+footer {
+    width: 100%;
+    padding: 50px 10%;
+    background: #161616;
+    color: #f8f8ff
+}
+.contact img{
+        padding: 10px;
+        height: 60px;    
+}
+
+
+
+.container {
+    display: none;
+    flex-wrap: wrap;
+    
+}
+.fade-in {
+	 opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s; 
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.col-4 {
+    padding: 20px;
+    width: calc(100% / 12 * 4 );
+}
+.col-6 {
+    width: 50%;
+    padding: 20px;
+}
+.col-3 {
+    width: calc(100% / 12 * 3 );
+}
+
+img {
+    max-width: 100%;
+    border-radius: none;
+}
+@media (max-width: 768px){
+    .sm-col-12{
+        width: 100%;
+    }
+    img {
+border-radius: 0%;
+    }
+}
+
+
+
+
