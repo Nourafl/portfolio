@@ -35,6 +35,9 @@ h3 {
   color: #161616;
 
 }
+.who-we{
+    display: flex;
+}
 
 nav {
     background: -webkit-linear-gradient(top, #0c010b,#3f3d3f);
@@ -87,7 +90,9 @@ height: 100vh;
   padding: 50px 10%;
   
 }
-
+.white-text{
+    color: white;
+}
 
 section:nth-of-type(even) {
   background:-webkit-linear-gradient(top, #0f0b0f, #080508);
@@ -150,8 +155,13 @@ footer {
 }
 .col-3 {
     width: calc(100% / 12 * 3 );
+    justify-content: flex-start;
 }
-
+.col-3 > img {
+    justify-content: baseline;
+    justify-items: flex-start;
+    width: 100px;
+}
 img {
     max-width: 100%;
     border-radius: none;
@@ -160,6 +170,9 @@ img {
     .sm-col-12{
         width: 100%;
     }
+    .sm-col-9{
+        width: 50%;
+    }
     img {
 border-radius: 0%;
     }
@@ -167,4 +180,19 @@ border-radius: 0%;
 
 
 
+.nav-side {
+    position: fixed;
+    background: rgba(24, 17, 17, 0.37);
+    padding: 0px;
+    width: 180px;
+    margin-top: 20%;
 
+}
+
+td:hover  {
+border:1px solid #f5f5f5 ;
+background: rgba(210, 202, 214, 0.671);
+animation: "bounce"; 
+width: 180px;
+ 
+}
